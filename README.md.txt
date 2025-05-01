@@ -1,6 +1,6 @@
 # Audio Classification Project
 
-This project records audio, extracts features from the recorded audio, and classifies it using a pre-trained machine learning model (`my_model.h5`). The classification model predicts whether the audio belongs to one of three categories: "other", "parvez", or "noise". The user interface is built using `Kivy` and `KivyMD`.
+This project records audio, extracts features from the recorded audio, and classifies it using a CNN deep learning model (`my_model.h5`). The classification model predicts whether the audio belongs to one of three categories: "other", "parvez", or "noise". The user interface is built using `Kivy` and `KivyMD`.
 
 ## Features
 
@@ -64,12 +64,3 @@ To run the full application with the user interface, execute the `MyApp.py` file
 
     This will start the Kivy application, allowing you to interact with the audio recording, feature extraction, and classification process directly through the UI.
 
-### Example Code
-
-If you want to test the classification without using the UI, you can run the following code:
-
-```python
-# To record audio and classify it
-RecordAudio()  # Records audio and saves it to testing.wav
-result = Classify('testing.wav')  # Classifies the audio
-print(result)
